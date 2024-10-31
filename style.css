@@ -145,10 +145,10 @@ body {
 
 
 .column__footer {
-    color: #ecf0f1; /* Світлий текст */
-    padding: 40px 20px; /* Внутрішні відступи */
-    text-align: center; /* Вирівнювання тексту по центру */
-    font-family: 'Arial', sans-serif; /* Шрифт */
+    color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
 .footer__contact, .footer__social, .footer__links, .footer__newsletter {
@@ -159,50 +159,30 @@ body {
 .footer__social h2,
 .footer__links h2,
 .footer__newsletter h2 {
-    border-bottom: 2px solid #ecf0f1; /* Нижня границя для заголовків */
-    padding-bottom: 10px; /* Внутрішній відступ */
-    font-size: 1.5em; /* Розмір шрифту заголовків */
+    border-bottom: 2px solid #ecf0f1; 
+    padding-bottom: 10px; 
+    font-size: 1.5em;
 }
 
 .footer__social p {
-    margin: 10px 0; /* Відстань між рядками */
+    margin: 10px 0;
 }
 
 .footer__links ul {
-    list-style-type: none; /* Без маркерів */
-    padding: 0; /* Без відступів */
+    list-style-type: none;
+    padding: 0;
 }
 
 .footer__links li {
-    margin: 5px 0; /* Відстань між пунктами списку */
+    margin: 5px 0;
 }
 
 .footer__links a {
-    color: #1abc9c; /* Колір для посилань */
-    text-decoration: none; /* Без підкреслення */
+    color: #1abc9c; 
+    text-decoration: none;
 }
 
 .footer__links a:hover {
-    text-decoration: underline; /* Підкреслення при наведенні */
+    text-decoration: underline;
 }
 
-.footer__newsletter input[type="email"] {
-    padding: 10px; /* Внутрішній відступ для поля вводу */
-    border: 1px solid #ecf0f1; /* Границя */
-    border-radius: 5px; /* Закруглені кути */
-    width: 250px; /* Ширина поля вводу */
-    margin-right: 10px; /* Відстань праворуч */
-}
-
-.footer__newsletter button {
-    background-color: #1abc9c; /* Колір фону кнопки */
-    color: white; /* Колір тексту */
-    padding: 10px 15px; /* Внутрішні відступи */
-    border: none; /* Без границі */
-    border-radius: 5px; /* Закруглені кути */
-    cursor: pointer; /* Зміна курсору при наведенні */
-}
-
-.footer__newsletter button:hover {
-    background-color: #16a085; /* Темніший колір при наведенні */
-}
