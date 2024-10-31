@@ -16,6 +16,8 @@ body {
     display: flex;
     width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 /* Кожна колонка */
@@ -57,7 +59,6 @@ body {
 .column--center {
     flex: 2;
     background-color: #444;
-    height: 929px;
 }
 
 .column__content {
@@ -186,3 +187,60 @@ body {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .column {
+        width: 100%; /* Columns take the full width */
+    }
+    .content__block {
+        flex-direction: column;
+        align-items: flex-start; /* Align content vertically */
+    }
+    .content__image {
+        width: 100%; /* Images take full width */
+        height: auto; /* Adjust height to maintain aspect ratio */
+        margin: 0; /* Remove margin to fit image within block */
+    }
+}
+
+/* Медіа-запити */
+@media (min-width: 768px) {
+    /* На планшетах центральна колонка займатиме більше місця */
+    .column--center {
+        flex: 2;
+    }
+
+    .column {
+        flex: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    /* На великих екранах три колонки поруч */
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column--left, .column--right {
+        flex: 1;
+    }
+
+    .column--center {
+        flex: 2;
+    }
+
+    /* Контент блоку відображатиметься горизонтально */
+    .content__block {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content__image {
+        width: 200px; /* Фіксована ширина зображення на великих екранах */
+        margin-left: 20px;
+    }
+}
